@@ -13,8 +13,8 @@ class UserRepository extends BaseRepository implements UserRepositoryInterface
         return User::class;
     }
 
-    public function getProducts()
+    public function getProducts($limit)
     {
-        return $this->model->all();
+        return $this->model->paginate($limit);
     }
 }

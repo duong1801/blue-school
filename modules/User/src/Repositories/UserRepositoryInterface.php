@@ -7,6 +7,6 @@ use App\Repositories\RepositoryInterface;
 interface UserRepositoryInterface extends RepositoryInterface
 {
 
-    public function getProducts();
+    public function getProducts($limit);
 
 }

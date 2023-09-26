@@ -1,4 +1,4 @@
 <?php
 return [
-    'title'=>'User list'
+    'title'=>'User management'
 ];

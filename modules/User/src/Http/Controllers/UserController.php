@@ -12,6 +12,12 @@ class UserController extends Controller {
     }
     public function index()
     {
-      return view('user::list');
+      $pageTitle = trans('user::custom.title');
+      $users = $this->userRepo->getProducts(config('config.pagination'));
+      return view('user::list',compact('pageTitle','users'));
+    }
+    public function create()
+    {
+      
     }
 }

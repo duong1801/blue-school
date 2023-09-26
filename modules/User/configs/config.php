@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'name' => 'blue sky',
+    'pagination' => 5,
 ];

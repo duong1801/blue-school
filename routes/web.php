@@ -16,6 +16,3 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return config('config.name');
 })->middleware('demo');
-
-
-Route::get('/product',[\App\Http\Controllers\ProductController::class,'index']);
